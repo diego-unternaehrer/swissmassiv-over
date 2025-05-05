@@ -7,15 +7,47 @@
     <title>swiss massiv</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
   </head>
 
-  <body>
-    <main>
-      <h1>swiss massiv hat den Betrieb eingestellt</h1>
-      <p>Die vergangenen Jahre waren von grossen Erfolgen und wertvollen Kooperationen geprägt. Gemeinsam mit euch, unseren
-      geschätzten Kunden und Partnern, konnten wir viel erreichen. Auf diese Zeiten blicken wir mit Stolz zurück. Deine
-      Unterstützung hat uns in jeder Phase begleitet und swiss massiv zu dem gemacht, was es heute ist. Dafür möchten wir uns
-      von ganzen Herzen bedanken.</p>
+  <body style="background-color: #000000; color: #FFFFFF; max-width: 800px; margin: 0 auto; padding: 20px;  font-family: 'Roboto', sans-serif;">
+    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; text-align: center; padding: 1rem; ">
+      <img src="https://res.cloudinary.com/swissmassiv/image/upload/v1602331340/Assets/Logo_weiss_Mario_vvkj4r.png" alt="" style="width: 100%; max-width: 300px; height: auto; padding-bottom: 50px;">
+      <h1 style="font-weight: bold;">swiss massiv hat den Betrieb eingestellt</h1>
+      <p style="font-size: 16px; line-height: 26px; max-width: 800px; padding-bottom: 50px;">
+        Die vergangenen Jahre waren von grossen Erfolgen und wertvollen Kooperationen geprägt. Gemeinsam mit euch, unseren geschätzten Kunden und Partnern, konnten wir viel erreichen. Auf diese Zeiten blicken wir mit Stolz zurück.
+        <br>
+        Deine Unterstützung hat uns in jeder Phase begleitet und swiss massiv zu dem gemacht, was es heute ist. Dafür möchten wir uns von ganzen Herzen bedanken.
+      </p>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/otmDqH0Zcas?autoplay=1&controls=0&mute=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=otmDqH0Zcas"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+
     </main>
     <script src="index.js"></script>
   </body>
